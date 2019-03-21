@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
@@ -197,20 +197,20 @@ Designed by Bobby Schulz
 <library name="bschulz">
 <packages>
 <package name="DCN_R-PDSO-G8">
-<smd name="8" x="-0.975" y="1.3" dx="0.45" dy="1.1" layer="1"/>
-<smd name="7" x="-0.325" y="1.3" dx="0.45" dy="1.1" layer="1"/>
-<smd name="6" x="0.325" y="1.3" dx="0.45" dy="1.1" layer="1"/>
-<smd name="5" x="0.975" y="1.3" dx="0.45" dy="1.1" layer="1"/>
-<smd name="4" x="0.975" y="-1.3" dx="0.45" dy="1.1" layer="1" rot="R180"/>
-<smd name="3" x="0.325" y="-1.3" dx="0.45" dy="1.1" layer="1" rot="R180"/>
-<smd name="2" x="-0.325" y="-1.3" dx="0.45" dy="1.1" layer="1" rot="R180"/>
-<smd name="1" x="-0.975" y="-1.3" dx="0.45" dy="1.1" layer="1" rot="R180"/>
-<wire x1="-1.45" y1="0.8" x2="-1.45" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-1.45" y1="-0.8" x2="1.45" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="1.45" y1="-0.8" x2="1.45" y2="0.8" width="0.127" layer="21"/>
-<wire x1="1.45" y1="0.8" x2="-1.45" y2="0.8" width="0.127" layer="21"/>
+<smd name="8" x="-0.975" y="1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="7" x="-0.325" y="1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="0.325" y="1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="0.975" y="1.3" dx="1.1" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="0.975" y="-1.3" dx="1.1" dy="0.45" layer="1" rot="R270"/>
+<smd name="3" x="0.325" y="-1.3" dx="1.1" dy="0.45" layer="1" rot="R270"/>
+<smd name="2" x="-0.325" y="-1.3" dx="1.1" dy="0.45" layer="1" rot="R270"/>
+<smd name="1" x="-0.975" y="-1.3" dx="1.1" dy="0.45" layer="1" rot="R270"/>
+<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.127" layer="21"/>
 <circle x="-1.651" y="-1.016" radius="0.127" width="0.127" layer="21"/>
-<text x="2.032" y="0" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
+<text x="1.905" y="0" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center">&gt;NAME</text>
 </package>
 <package name="SCREWTERMINAL-3.5MM-2">
 <description>&lt;h3&gt;Screw Terminal  3.5mm Pitch - 2 Pin PTH&lt;/h3&gt;
@@ -796,6 +796,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </autorouter>
 <elements>
 <element name="U1" library="bschulz" package="DCN_R-PDSO-G8" value="INA219DCN" x="47.879" y="24.892" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="296-23770-1-ND" x="47.879" y="24.892" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TI" x="47.879" y="24.892" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="INA219AIDCNR" x="47.879" y="24.892" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="49.784" y="24.892" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="R1" library="bschulz_passives" package="R0805" value="10m" x="48.514" y="28.067" smashed="yes">
@@ -831,6 +834,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="29.337" y="31.369" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
 <element name="U2" library="bschulz" package="DCN_R-PDSO-G8" value="INA219DCN" x="32.258" y="17.272" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="296-23770-1-ND" x="32.258" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TI" x="32.258" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="INA219AIDCNR" x="32.258" y="17.272" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="34.163" y="17.272" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="R2" library="bschulz_passives" package="R0805" value="10m" x="32.893" y="20.447" smashed="yes">
@@ -841,6 +847,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="35.306" y="20.447" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
 <element name="U3" library="bschulz" package="DCN_R-PDSO-G8" value="INA219DCN" x="29.718" y="24.892" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="296-23770-1-ND" x="29.718" y="24.892" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="TI" x="29.718" y="24.892" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="INA219AIDCNR" x="29.718" y="24.892" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="31.623" y="24.892" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="R3" library="bschulz_passives" package="R0805" value="100m" x="30.353" y="28.067" smashed="yes">
