@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.3.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="MAX31856_BREAKOUT">
+<pad name="SDO" x="0" y="0" drill="1.016"/>
+<pad name="SCK" x="-2.54" y="0" drill="1.016"/>
+<pad name="GND" x="-5.08" y="0" drill="1.016"/>
+<pad name="3VO" x="-7.62" y="0" drill="1.016"/>
+<pad name="VIN" x="-10.16" y="0" drill="1.016"/>
+<pad name="SDI" x="2.54" y="0" drill="1.016"/>
+<pad name="CS" x="5.08" y="0" drill="1.016"/>
+<pad name="FLT" x="7.62" y="0" drill="1.016"/>
+<pad name="DRDY" x="10.16" y="0" drill="1.016"/>
+<pad name="THERM+" x="-1.75" y="15.24" drill="1.2"/>
+<pad name="THERM-" x="1.75" y="15.24" drill="1.2"/>
+<wire x1="10.065" y1="19.05" x2="-10.065" y2="19.05" width="0.127" layer="21"/>
+<wire x1="-10.065" y1="19.05" x2="-12.065" y2="17.05" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.065" y1="17.05" x2="-12.065" y2="-0.54" width="0.127" layer="21"/>
+<wire x1="-12.065" y1="-0.54" x2="-10.065" y2="-2.54" width="0.127" layer="21" curve="90"/>
+<wire x1="-10.065" y1="-2.54" x2="10.065" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="10.065" y1="-2.54" x2="12.065" y2="-0.54" width="0.127" layer="21" curve="90"/>
+<wire x1="12.065" y1="-0.54" x2="12.065" y2="17.05" width="0.127" layer="21"/>
+<wire x1="12.065" y1="17.05" x2="10.065" y2="19.05" width="0.127" layer="21" curve="90"/>
+<hole x="-9.525" y="16.764" drill="3.175"/>
+<hole x="9.525" y="16.764" drill="3.175"/>
+<text x="0" y="7.62" size="1.778" layer="51" font="vector" ratio="15" align="center">MAX31856
+Breakout</text>
+</package>
+<package name="U1V10FX_REGULATOR">
+<pad name="GND" x="0" y="-4.445" drill="1.016"/>
+<pad name="VIN" x="-2.54" y="-4.445" drill="1.016"/>
+<pad name="VOUT" x="2.54" y="-4.445" drill="1.016"/>
+<wire x1="-4.445" y1="5.715" x2="-4.445" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-5.715" x2="4.445" y2="-5.715" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-5.715" x2="4.445" y2="5.715" width="0.127" layer="21"/>
+<wire x1="4.445" y1="5.715" x2="-4.445" y2="5.715" width="0.127" layer="21"/>
+<text x="0" y="2.921" size="0.6096" layer="21" font="vector" ratio="15" align="center">Pololu 
+Regulator
+U1V10Fx</text>
+<text x="-2.54" y="-2.54" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">Vin</text>
+<text x="0" y="-2.54" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">GND</text>
+<text x="2.54" y="-2.54" size="0.6096" layer="21" font="vector" ratio="15" rot="R90" align="center">Vout</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX31856_BREAKOUT">
+<pin name="VIN" x="-7.62" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="3V0" x="-7.62" y="2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-7.62" y="0" visible="pin" length="middle" direction="pwr"/>
+<pin name="SCK" x="-7.62" y="-5.08" visible="pin" length="middle" direction="in"/>
+<pin name="SDO" x="-7.62" y="-7.62" visible="pin" length="middle" direction="out"/>
+<pin name="SDI" x="-7.62" y="-10.16" visible="pin" length="middle" direction="in"/>
+<pin name="CS" x="-7.62" y="-12.7" visible="pin" length="middle" direction="in"/>
+<pin name="FLT" x="-7.62" y="-15.24" visible="pin" length="middle" direction="out"/>
+<pin name="DRDY" x="-7.62" y="-17.78" visible="pin" length="middle" direction="out"/>
+<pin name="THERM+" x="20.32" y="5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="THERM-" x="20.32" y="2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="6.35" y="8.89" size="1.27" layer="95" align="center">MAX31856 Breakout</text>
+</symbol>
+<symbol name="POLOLU_CONVERTER">
+<pin name="GND" x="-12.7" y="0" visible="pin" length="middle" direction="pwr"/>
+<pin name="VIN" x="-12.7" y="2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="VOUT" x="12.7" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="0" y="6.858" size="1.778" layer="95" ratio="15" align="center">Pololu Regulator</text>
+<text x="0" y="-4.064" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX31856_BREAKOUT" prefix="XU">
+<description>&lt;b&gt;Socket for MAX31856 Breakout from Adafruit&lt;/b&gt;
+&lt;br&gt;&lt;a href = "https://www.adafruit.com/product/3263"&gt;Adafruit Board&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX31856_BREAKOUT" x="-2.54" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="MAX31856_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="3V0" pad="3VO"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="DRDY" pad="DRDY"/>
+<connect gate="G$1" pin="FLT" pad="FLT"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="SDI" pad="SDI"/>
+<connect gate="G$1" pin="SDO" pad="SDO"/>
+<connect gate="G$1" pin="THERM+" pad="THERM+"/>
+<connect gate="G$1" pin="THERM-" pad="THERM-"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POLOLU_REGULATOR">
+<gates>
+<gate name="G$1" symbol="POLOLU_CONVERTER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="U1V10FX_REGULATOR">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VOUT" pad="VOUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>
