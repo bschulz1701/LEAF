@@ -6,22 +6,22 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -1857,6 +1857,40 @@ http://www.maxim-ic.com .. MAX3223-MAX3243.pdf</description>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+</package>
+<package name="MICROSD_HIROSE_HINDGED">
+<smd name="1" x="3.2" y="0.7" dx="0.7" dy="2" layer="1"/>
+<smd name="2" x="2.1" y="0.7" dx="0.7" dy="2" layer="1"/>
+<smd name="3" x="1" y="0.7" dx="0.7" dy="2" layer="1"/>
+<smd name="4" x="-0.1" y="0.7" dx="0.7" dy="2" layer="1"/>
+<smd name="5" x="-1.2" y="0.7" dx="0.7" dy="2" layer="1"/>
+<smd name="6" x="-2.3" y="0.7" dx="0.7" dy="2" layer="1"/>
+<smd name="7" x="-3.4" y="0.7" dx="0.7" dy="2" layer="1"/>
+<smd name="8" x="-4.5" y="0.7" dx="0.7" dy="2" layer="1"/>
+<smd name="MT4" x="-6.6" y="1.2" dx="1" dy="2.6" layer="1"/>
+<smd name="MT1" x="6.75" y="1.2" dx="2.6" dy="1.5" layer="1" rot="R90"/>
+<smd name="MT3" x="-3.1" y="13.4" dx="1.4" dy="2.7" layer="1" rot="R90"/>
+<smd name="CD" x="1.8" y="13.4" dx="1.4" dy="2.7" layer="1" rot="R90"/>
+<smd name="MT2" x="5.08" y="13.5" dx="1.2" dy="1.2" layer="1" rot="R90"/>
+<rectangle x1="-6.9" y1="2.5" x2="-6.3" y2="6.3" layer="39"/>
+<rectangle x1="6.7" y1="2.5" x2="7.3" y2="6.3" layer="39"/>
+<rectangle x1="-5.05" y1="8.7" x2="3.75" y2="11.2" layer="39"/>
+<wire x1="-6.9" y1="14.1" x2="-6.9" y2="0" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="0" x2="-5.5" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="0" x2="5.5" y2="0" width="0.127" layer="21"/>
+<wire x1="5.5" y1="0" x2="6.9" y2="0" width="0.127" layer="21"/>
+<wire x1="6.9" y1="0" x2="6.9" y2="14.1" width="0.127" layer="21"/>
+<wire x1="6.9" y1="14.1" x2="-6.9" y2="14.1" width="0.127" layer="21"/>
+<text x="0" y="15.113" size="1.27" layer="21" font="vector" ratio="15" align="center">&gt;NAME</text>
+<wire x1="-5.5" y1="0" x2="-5.5" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-0.85" x2="-5" y2="-1.35" width="0.127" layer="21" curve="90"/>
+<wire x1="-5" y1="-1.35" x2="5" y2="-1.35" width="0.127" layer="21"/>
+<wire x1="5" y1="-1.35" x2="5.5" y2="-0.85" width="0.127" layer="21" curve="90"/>
+<wire x1="5.5" y1="-0.85" x2="5.5" y2="0" width="0.127" layer="21"/>
+<rectangle x1="-6.9" y1="2.5" x2="-6.3" y2="6.3" layer="43"/>
+<rectangle x1="6.7" y1="2.5" x2="7.3" y2="6.3" layer="43"/>
+<rectangle x1="-5.05" y1="8.7" x2="3.75" y2="11.2" layer="43"/>
+<rectangle x1="-5.5" y1="-1.35" x2="5.5" y2="0" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -3784,6 +3818,29 @@ push-push type</description>
 <attribute name="DIGIKEY" value="WM19093CT-ND" constant="no"/>
 <attribute name="MF" value="Molex" constant="no"/>
 <attribute name="MPN" value="5025700893" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="HINDGED" package="MICROSD_HIROSE_HINDGED">
+<connects>
+<connect gate="G$1" pin="CARD_DETECT" pad="CD"/>
+<connect gate="G$1" pin="CARD_DETECT1" pad="MT3"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="DAT1" pad="8"/>
+<connect gate="G$1" pin="DAT2" pad="1"/>
+<connect gate="G$1" pin="DATA_IN" pad="3"/>
+<connect gate="G$1" pin="DATA_OUT" pad="7"/>
+<connect gate="G$1" pin="GND" pad="MT1"/>
+<connect gate="G$1" pin="GND1" pad="MT2 MT4"/>
+<connect gate="G$1" pin="SCLK" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="HR1972CT-ND" constant="no"/>
+<attribute name="MF" value="Hirose" constant="no"/>
+<attribute name="MPN" value="DM3CS-SF" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9655,7 +9712,7 @@ U1V10Fx</text>
 <part name="BT1" library="bschulz" deviceset="BATTERY_COIN" device="12MM"/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C10" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF" value="0.1uF"/>
-<part name="SD1" library="bschulz" deviceset="MICROSD" device="CD" value="MICROSDCD"/>
+<part name="SD1" library="bschulz" deviceset="MICROSD" device="HINDGED" value="MICROSDHINDGED"/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R41" library="bschulz_passives" deviceset="R-EU_" device="R0402" technology="10K" value="10k"/>
 <part name="GND43" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
