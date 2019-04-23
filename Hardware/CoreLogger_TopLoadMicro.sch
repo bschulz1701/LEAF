@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13,7 +13,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
@@ -2306,7 +2306,11 @@ Switches electronic signals</description>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED10562-ND" constant="no"/>
+<attribute name="MF" value="On Shore" constant="no"/>
+<attribute name="MPN" value="OSTVN03A150" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3.5_SCREW" package="1X03_3.5MM_SCREW">
@@ -2350,7 +2354,11 @@ Switches electronic signals</description>
 <connect gate="G$1" pin="5" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED10564-ND" constant="no"/>
+<attribute name="MF" value="On Shore" constant="no"/>
+<attribute name="MPN" value="OSTVN05A150" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7258,6 +7266,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="RC0603FR-07360KL" constant="no"/>
 <attribute name="VALUE_PART" value="360k" constant="no"/>
 </technology>
+<technology name="422K">
+<attribute name="DIGIKEY" value="311-422KHRCT-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="RC0603FR-07422KL" constant="no"/>
+<attribute name="VALUE_PART" value="422k" constant="no"/>
+</technology>
 <technology name="470">
 <attribute name="DIGIKEY" value="311-470HRCT-ND" constant="no"/>
 <attribute name="MF" value="Yageo" constant="no"/>
@@ -7306,6 +7320,12 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MPN" value="ERA-3AEB102V" constant="no"/>
 <attribute name="VALUE_PART" value="1k" constant="no"/>
 </technology>
+<technology name="P27K">
+<attribute name="DIGIKEY" value="P27KDBCT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERA-3AEB273V" constant="no"/>
+<attribute name="VALUE_PART" value="27k" constant="no"/>
+</technology>
 <technology name="P30K">
 <attribute name="DIGIKEY" value="P30KDBCT-ND" constant="no"/>
 <attribute name="MF" value="Panasonic" constant="no"/>
@@ -7340,6 +7360,16 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="DIGIKEY" value="PMR10EZPFU5L00" constant="no"/>
 <attribute name="MF" value="Rohm" constant="no"/>
 <attribute name="MPN" value="PMR10EZPFU5L00" constant="no"/>
+</technology>
+<technology name="0.01">
+<attribute name="DIGIKEY" value="CRF0805-FZ-R010ELFCT-ND" constant="no"/>
+<attribute name="MF" value="Bourns" constant="no"/>
+<attribute name="MPN" value="CRF0805-FZ-R010ELF" constant="no"/>
+</technology>
+<technology name="0.1">
+<attribute name="DIGIKEY" value="P19308CT-ND" constant="no"/>
+<attribute name="MF" value="Panasonic" constant="no"/>
+<attribute name="MPN" value="ERJ-6DSFR10V" constant="no"/>
 </technology>
 <technology name="P1M">
 <attribute name="DIGIKEY" value="P1MDACT-ND" constant="no"/>
@@ -8191,15 +8221,30 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM1555C1H120GA01D" constant="no"/>
 </technology>
+<technology name="1NF">
+<attribute name="DIGIKEY" value="311-1080-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0603KRX7R9BB102" constant="no"/>
+</technology>
 <technology name="1UF">
 <attribute name="DIGIKEY" value="490-10479-1-ND" constant="no"/>
 <attribute name="MF" value="Murata" constant="no"/>
 <attribute name="MPN" value="GRM188R61C105KA12D" constant="no"/>
 </technology>
+<technology name="2.2NF">
+<attribute name="DIGIKEY" value="311-1081-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0603KRX7R9BB222" constant="no"/>
+</technology>
 <technology name="2.2UF">
 <attribute name="DIGIKEY" value="1276-1183-1-ND" constant="no"/>
 <attribute name="MF" value="Samsung" constant="no"/>
 <attribute name="MPN" value="CL10A225KQ8NNNC" constant="no"/>
+</technology>
+<technology name="680PF">
+<attribute name="DIGIKEY" value="311-1188-1-ND" constant="no"/>
+<attribute name="MF" value="Yageo" constant="no"/>
+<attribute name="MPN" value="CC0603KRX7R9BB681" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9511,11 +9556,19 @@ U1V10Fx</text>
 <part name="J9" library="bschulz" deviceset="CONN_02" device="2.54_SCREW"/>
 <part name="MS1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="FEATHERWING" device="_NODIM" value="FEATHERWING_NODIM"/>
 <part name="U1" library="bschulz" deviceset="TPS6220*" device="SOT23" technology="0"/>
-<part name="VR1" library="bschulz" deviceset="POTENTIOMETER" device="3214W"/>
-<part name="L1" library="bschulz" deviceset="INDUCTOR" device="LQS_4X4" value="10uH"/>
+<part name="VR1" library="bschulz" deviceset="POTENTIOMETER" device="3214W">
+<attribute name="DIGIKEY" value="3214W-1-204ECT-ND"/>
+<attribute name="MF" value="Bourns"/>
+<attribute name="MPN" value="3214W-1-204E"/>
+</part>
+<part name="L1" library="bschulz" deviceset="INDUCTOR" device="LQS_4X4" value="10uH">
+<attribute name="DIGIKEY" value="732-10757-1-ND"/>
+<attribute name="MF" value="Wurth"/>
+<attribute name="MPN" value="74404043100A"/>
+</part>
 <part name="C1" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="56PF" value="56pF"/>
 <part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="220PF" value="220pF"/>
-<part name="R3" library="bschulz_passives" deviceset="R-EU_" device="R0603" value="442k"/>
+<part name="R3" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="422K" value="442k"/>
 <part name="R4" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="180K" value="180k"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9524,7 +9577,11 @@ U1V10Fx</text>
 <part name="C4" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="10UF" value="10uF"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q1" library="bschulz" deviceset="MOSFET-NCH" device="-DMG3404L" value="DMG3404"/>
-<part name="D1" library="bschulz" deviceset="DIODE" device="SOD-123"/>
+<part name="D1" library="bschulz" deviceset="DIODE" device="SOD-123">
+<attribute name="DIGIKEY" value="1N4448WTPMSCT-ND"/>
+<attribute name="MF" value="Micro Commercial"/>
+<attribute name="MPN" value="1N4448W-TP"/>
+</part>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U3" library="bschulz" deviceset="MIC2544" device="MSOP"/>
 <part name="C5" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
@@ -9532,20 +9589,20 @@ U1V10Fx</text>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
+<part name="R5" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="1K"/>
 <part name="U4" library="bschulz" deviceset="MIC2544" device="MSOP"/>
 <part name="C7" library="bschulz_passives" deviceset="C-EU" device="C0402" technology="0.1UF" value="0.1uF"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C8" library="bschulz_passives" deviceset="C-EU" device="C0805" technology="22UF" value="22uF"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R6" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
+<part name="R6" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="470"/>
 <part name="U2" library="bschulz" deviceset="SN74AUP1G34" device="SC70"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U5" library="bschulz" deviceset="LTC2054" device=""/>
-<part name="R7" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
-<part name="R8" library="bschulz_passives" deviceset="R-EU_" device="R0603"/>
-<part name="C9" library="bschulz_passives" deviceset="C-EU" device="C0603"/>
+<part name="R7" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="P27K"/>
+<part name="R8" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="1K"/>
+<part name="C9" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1NF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
@@ -9563,8 +9620,8 @@ U1V10Fx</text>
 <part name="U10" library="bschulz" deviceset="SN74*1G14" device="DCK" technology="AUP"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U11" library="bschulz" deviceset="MCP23018" device="QFN"/>
-<part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="10M" value="10M"/>
-<part name="R11" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="10M" value="10M"/>
+<part name="R10" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="180K" value="180k"/>
+<part name="R11" library="bschulz_passives" deviceset="R-EU_" device="R0603" technology="180K" value="180k"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U12" library="bschulz" deviceset="TLV3691" device="DCK"/>
@@ -9572,10 +9629,10 @@ U1V10Fx</text>
 <part name="J10" library="bschulz" deviceset="CONN_4" device="2.54_SCREW"/>
 <part name="U13" library="bschulz" deviceset="INA219" device="DCN"/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R9" library="bschulz_passives" deviceset="R-EU_" device="R0805" value="10m"/>
+<part name="R9" library="bschulz_passives" deviceset="R-EU_" device="R0805" technology="0.01" value="10m"/>
 <part name="U14" library="bschulz" deviceset="INA219" device="DCN"/>
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0805" value="100m"/>
+<part name="R12" library="bschulz_passives" deviceset="R-EU_" device="R0805" technology="0.1" value="100m"/>
 <part name="U$1" library="LEAF_Components" deviceset="POLOLU_REGULATOR" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="RTC1" library="bschulz" deviceset="DS3231M" device=""/>
@@ -9679,10 +9736,16 @@ F_IN
 <instance part="VR1" gate="G$1" x="180.34" y="83.82" smashed="yes" rot="R180">
 <attribute name="NAME" x="177.292" y="84.074" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="181.61" y="83.82" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="MF" x="180.34" y="83.82" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="DIGIKEY" x="180.34" y="83.82" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="180.34" y="83.82" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="L1" gate="G$1" x="172.72" y="106.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="177.8" y="105.41" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="177.8" y="110.49" size="1.778" layer="96" rot="R180"/>
+<attribute name="MF" x="172.72" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="172.72" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DIGIKEY" x="172.72" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C1" gate="G$1" x="187.96" y="104.14" smashed="yes">
 <attribute name="NAME" x="189.484" y="104.521" size="1.778" layer="95"/>
@@ -9727,6 +9790,9 @@ F_IN
 <instance part="D1" gate="G$1" x="226.06" y="99.06" smashed="yes" rot="R90">
 <attribute name="NAME" x="225.5774" y="101.6" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="228.3714" y="101.6" size="1.778" layer="96" rot="R90"/>
+<attribute name="MF" x="226.06" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DIGIKEY" x="226.06" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="226.06" y="99.06" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND5" gate="1" x="226.06" y="73.66" smashed="yes">
 <attribute name="VALUE" x="223.52" y="71.12" size="1.778" layer="96"/>
