@@ -16,15 +16,24 @@
 ------------------------------------------------------------------------------*/
 
 #include <Wire.h>
+#include <avr/wdt.h>
 #include <LIDARLite.h>
 
 LIDARLite myLidarLite;
 
 int Switch = 9; //Use pin 12 to switch POWER ENABLE on and off
-unsigned long UpdatePeriod = 5000; //Update only once every 1 second
+unsigned long UpdatePeriod = 300; //Update only once every 1 second
 unsigned int Data = 0; //Global handler used to move data
+volatile bool Update = true; //Update flag, true on startup for initial sample
+volatile int Count = 0; 
 void setup()
 {
+  wdt_enable(WDTO_8S);
+  PRR = 0x4D; //Shut down Timer1, Timer2, SPI, ADC
+  pinMode(2, INPUT); //Switch all unused control pins to be inputs
+  pinMode(15, INPUT);
+  pinMode(3, INPUT); 
+  
   pinMode(Switch, OUTPUT);
   digitalWrite(Switch, LOW); //Enable power to device for startup
   Serial.begin(9600); // Initialize serial connection to display distance readings
@@ -63,9 +72,16 @@ void setup()
   */
   myLidarLite.configure(0); // Change this number to try out alternate configurations
   digitalWrite(Switch, HIGH); //Turn off device after startup
-
+  TCCR0B = TCCR0B & 0xF8;
+  TCCR0B = TCCR0B | 0x05;
+//  Serial.println(TCCR0B);
   OCR0A = 0xAF;
   TIMSK0 |= _BV(OCIE0A);
+  Serial.println("LiDAR-Lite-V3");
+  Serial.println("License CC-BY-SA-4.0");
+  Serial.println("Bobby Schulz\nNorthern Widget LLC");
+  Serial.println("When God said “Let there be light” he surely must have meant perfectly coherent light.\n-Charles Townes");
+  
 }
 
 void loop()
@@ -82,21 +98,31 @@ void loop()
     lidarliteAddress: Default 0x62. Fill in new address here if changed. See
       operating manual for instructions.
   */
-  unsigned long LocalTime = millis();
-  while(millis() - LocalTime < UpdatePeriod);
-  
-  digitalWrite(Switch, LOW); //Turn device on to take measurment
-  delay(25);
-  // Take a measurement with receiver bias correction and print to serial terminal
-//  Serial.println(myLidarLite.distance());
+//  unsigned long LocalTime = millis();
+//  while(millis() - LocalTime < UpdatePeriod);
 
-  // Take 99 measurements without receiver bias correction and print to serial terminal
-  for(int i = 0; i < 99; i++) //Clear buffer?
-  {
-    myLidarLite.distance(true);
+  SMCR = 0x01; //Enable idle sleep mode
+  asm("sleep"); //Put device to sleep
+  SMCR = 0x00; //Clear sleep mode bit
+
+  if(Update) { //If update flag is set
+    digitalWrite(Switch, LOW); //Turn device on to take measurment
+//    delay(2); //Wait for 30ms with new div
+    int Rollover = Count;
+    while(Count - Rollover < 3); //Increment 2 counts (16 ~ 32ms)
+    // Take a measurement with receiver bias correction and print to serial terminal
+  //  Serial.println(myLidarLite.distance());
+  
+//    // Take 99 measurements without receiver bias correction and print to serial terminal
+//    for(int i = 0; i < 100; i++) //Clear buffer?
+//    {
+//      myLidarLite.distance(true);
+//    }
+    Data = myLidarLite.distance(true)*10; //Return value in mm to corespond with Maxbotix convention
+    digitalWrite(Switch, HIGH); //Turn device off when done
+    wdt_reset(); //Reset watchdog after compleating read
+    Update = false; //Clear update flag
   }
-  Data = myLidarLite.distance();
-  digitalWrite(Switch, HIGH); //Turn device off when done
   
 //  
 //  unsigned long LocalTime = millis();
@@ -109,12 +135,17 @@ void loop()
 
 SIGNAL(TIMER0_COMPA_vect) 
 {
-  static int Count = 0;
-  if(Count > 10) {
+//  static int Count = 0;
+  if(Count % 10 == 0) {  //Update value every 150ms
+    Serial.print("R"); //"Range" prefix, again following maxbotix convention
     Serial.print(Data);
-    Serial.println(" cm"); //Remove newline??
+    Serial.print("\r"); //Send carrrage return
 //    delay(10);
-    Count = 0; //Clear counter
+//    Count = 0; //Clear counter
+  }
+  if(Count > UpdatePeriod){
+    Update = true; //Set update flag
+    Count = 0; //Clear count
   }
   Count++;
 } 
