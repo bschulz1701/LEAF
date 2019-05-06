@@ -1555,6 +1555,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="27.1272" y="11.6332" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="27.051" y="16.637" size="1.27" layer="27" rot="R180"/>
 </element>
+<element name="R14" library="bschulz_passives" package="R0603" value="180k" x="-3.81" y="-7.62" smashed="yes">
+<attribute name="DIGIKEY" value="P180KHCT-ND" x="-3.81" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Panasonic" x="-3.81" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ERJ-3EKF1803V" x="-3.81" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-3.81" y="-6.223" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="VALUE" x="-3.81" y="-9.017" size="0.6096" layer="27" font="vector" ratio="15" align="center"/>
+<attribute name="VALUE_PART" value="180k" x="-3.81" y="-7.62" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="3V0">
@@ -2226,6 +2234,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="7.00855" y1="34.6404" x2="7.14935" y2="34.4996" width="0.2" layer="1"/>
 <wire x1="7.14935" y1="34.4996" x2="7.1564" y2="34.4996" width="0.2" layer="1"/>
 <wire x1="4.3486" y1="34.6404" x2="7.00855" y2="34.6404" width="0.2" layer="1"/>
+<contactref element="R14" pad="2"/>
+<wire x1="-2.96" y1="-7.62" x2="19.431" y2="13.462" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="MS1" pad="18"/>
@@ -2460,6 +2470,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="13.081" y="67.183" extent="1-16" drill="0.254"/>
 <wire x1="13.081" y1="67.183" x2="21.844" y2="58.42" width="0.254" layer="16"/>
 <wire x1="21.844" y1="58.42" x2="21.844" y2="57.531" width="0.254" layer="16"/>
+<contactref element="R14" pad="1"/>
+<wire x1="-4.66" y1="-7.62" x2="35.814" y2="24.257" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AUX_EN">
 <contactref element="U3" pad="1"/>
