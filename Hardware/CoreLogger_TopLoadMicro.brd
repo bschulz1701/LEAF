@@ -1331,7 +1331,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="51.181" y="70.485" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE_PART" value="180k" x="-8.509" y="150.368" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R5" library="bschulz_passives" package="R0603" value="" x="69.342" y="43.688" smashed="yes" rot="R90">
+<element name="R5" library="bschulz_passives" package="R0603" value="1k" x="69.342" y="43.688" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="311-1KLDCT-ND" x="154.432" y="93.218" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Yageo" x="154.432" y="93.218" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="AC0603FR-071KL" x="154.432" y="93.218" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1339,7 +1339,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="70.739" y="43.688" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE_PART" value="1k" x="154.432" y="93.218" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R6" library="bschulz_passives" package="R0603" value="" x="78.105" y="43.688" smashed="yes" rot="R90">
+<element name="R6" library="bschulz_passives" package="R0603" value="470" x="78.105" y="43.688" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="311-470HRCT-ND" x="163.195" y="97.028" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Yageo" x="163.195" y="97.028" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0603FR-07470RL" x="163.195" y="97.028" size="1.778" layer="27" rot="R90" display="off"/>
